@@ -1,0 +1,48 @@
+# Don't check auto-generated stuff into git
+coverage
+build
+node_modules
+stats.json
+.pnp
+.pnp.js
+
+# misc
+.DS_Store
+npm-debug.log*
+
+# yarn
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# boilerplate internals
+generated-cra-app
+.cra-template-rb
+template
+.eslintcache
+
+# firebase config
+
+
+# Rust/WASM
+telemetry_wasm/target/
+telemetry_wasm/pkg/*.ts
+telemetry_wasm/pkg/*.js
+telemetry_wasm/pkg/package.json
+telemetry_wasm/pkg/.gitignore
+telemetry_wasm/Cargo.lock
+
+# Keep WASM binary and type definitions
+!telemetry_wasm/pkg/telemetry_wasm_bg.wasm
+!telemetry_wasm/pkg/telemetry_wasm.d.ts

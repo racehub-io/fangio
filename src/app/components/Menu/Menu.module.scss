@@ -1,0 +1,41 @@
+.menu {
+    position: relative;
+}
+
+.list {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    border-radius: 15px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.item {
+    background-color: #EDEDED;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.item:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.item:hover {
+    background-color: #C2C2C2;
+}
+
+.disabled {
+    color: #999999;
+    background-color: #D0D0D0 !important;
+}
+
+.disabled:hover {
+    background-color: #D0D0D0 !important;
+}

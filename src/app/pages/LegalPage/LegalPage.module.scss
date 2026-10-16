@@ -1,0 +1,19 @@
+.legal {
+    display: flex;
+    margin: 150px 200px;
+
+    @media (max-width: 1024px) {
+        margin: 150px 100px;
+    }
+
+    @media (max-width: 800px) {
+        margin: 150px 50px;
+    }
+}
+
+.legalPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

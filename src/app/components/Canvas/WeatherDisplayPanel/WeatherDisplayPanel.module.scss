@@ -1,0 +1,68 @@
+@import 'styles/colors.scss';
+
+.noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: $color-white;
+  opacity: 0.5;
+  font-size: 14px;
+  user-select: none;
+}
+
+.valueContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  gap: 14px;
+}
+
+.parameter {
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  text-align: center;
+  gap: 2px;
+}
+
+.value {
+  color: $color-white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  width: 100%;
+  height: 34px;
+  font-weight: bold;
+  text-align: center;
+
+  &:first-child {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+}
+
+.label {
+  font-size: 12px;
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+
+.componentName {
+  position: absolute;
+  bottom: 10px;
+  width: 100px;
+  font-size: 10px;
+  text-transform: uppercase;
+  opacity: 0.75;
+  left: calc(50% - 50px);
+  text-align: center;
+  color: $color-white;
+}

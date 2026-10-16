@@ -1,0 +1,105 @@
+@import "styles/layout.scss";
+@import "styles/colors.scss";
+
+.overlay {
+    position: relative;
+}
+
+.profileOverlay {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.membership {
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    min-width: 150px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.detailsHeader {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.planId {
+    text-transform: capitalize;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+    max-height: 135px;
+    margin-bottom: 20px;
+    ;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: $color-orange;
+    border-radius: 50%;
+}
+
+.active {
+    background-color: $color-actiongreen;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.inactive {
+    background-color: $color-orange;
+}
+
+.status {
+    position: absolute;
+    display: flex;
+    right: 44px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    top: 53px;
+}
+
+.panels {
+    display: flex;
+    gap: 20px;
+}
+
+.billing {
+    height: 35px;
+    max-height: 35px;
+    margin: auto 0 0 0;
+}
+
+.adduser {
+    height: 35px;
+    max-height: 35px;
+    margin: auto 0 0 0;
+}
+
+.close {
+    width: 12px;
+    cursor: pointer;
+}

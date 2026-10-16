@@ -1,0 +1,88 @@
+@import "styles/colors.scss";
+
+.button,
+.button:visited,
+.button:active {
+  background-color: $color-actiongreen;
+  color: $color-jetblack;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.6px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+  height: 45px;
+  text-transform: capitalize;
+  outline: none;
+
+  input {
+    padding: 12px 24px;
+    background: none;
+    border: none;
+    text-transform: capitalize;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+  }
+}
+
+.button:not(.disabled):not(.minimal):hover {
+  text-decoration: none;
+  color: $color-jetblack;
+  background-color: rgba(117, 251, 145, 0.7);
+}
+
+.xsmall,
+.xsmall:visited,
+.xsmall:active {
+  height: 20px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.medium {
+  font-size: 16px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.minimal,
+.minimal:visited,
+.minimal:active {
+  border: 1px solid $color-offwhite;
+  color: $color-offwhite;
+  background-color: transparent;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+    background-color: transparent;
+    color: $color-offwhite;
+  }
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+
+  input {
+    cursor: not-allowed !important;
+  }
+}
+
+.borderless,
+.borderless:visited,
+.borderless:active {
+  border-radius: 0;
+}

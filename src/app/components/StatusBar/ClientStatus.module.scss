@@ -1,0 +1,39 @@
+.wrapper {
+    display: flex;
+    margin-right: -1rem;
+}
+
+.item {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    padding: 0.25rem 1rem;
+    font-size: 0.875rem;
+    align-items: center;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.4;
+    }
+
+    .icon {
+        margin-right: 0.25rem;
+    }
+}
+
+.progressBarWrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.progressBarItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: #006aff;
+}

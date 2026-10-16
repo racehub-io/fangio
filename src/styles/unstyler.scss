@@ -1,0 +1,40 @@
+@mixin unstyle-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin remove-default-styles() {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+}
+
+@mixin remove-input-default-styles() {
+  @include remove-default-styles();
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  &::placeholder {
+    color: inherit;
+    opacity: 0.5;
+  }
+}
+
+input {
+  @include remove-input-default-styles();
+}
+
+/* Add more elements as per your need */

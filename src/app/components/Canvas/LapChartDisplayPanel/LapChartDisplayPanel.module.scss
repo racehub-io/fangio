@@ -1,0 +1,153 @@
+@import "styles/colors.scss";
+
+.noData {
+  position: absolute;
+  top: calc(50% - 21px / 2);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  min-width: 160px;
+  max-width: 600px;
+  min-height: 400px;
+  max-height: 1000px;
+  background-color: #1a1a1a;
+  padding: clamp(2px, 0.5vw, 4px);
+  border-radius: 2px;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+
+.statusIndicator {
+  margin-bottom: clamp(4px, 1vw, 8px);
+  padding: clamp(1px, 0.8vw, 3px);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+.pitLimiterOn {
+  background-color: #22c55e;
+}
+
+.pitLimiterOff {
+  background-color: #4b5563;
+}
+
+.inBox {
+  background-color: #3b82f6;
+}
+
+.outBox {
+  background-color: #4b5563;
+}
+
+.speedDisplay {
+  margin-bottom: clamp(4px, 1vw, 8px);
+  padding: clamp(2px, 1vw, 4px);
+  text-align: center;
+  color: white;
+  background-color: #1f2937;
+  border-radius: 4px;
+  font-size: clamp(11px, 2.5vw, 14px);
+}
+
+.tireGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(4px, 1.5vw, 8px);
+  width: 100%;
+}
+
+.tireContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(4px, 1.5vw, 8px);
+  background-color: #1f2937;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.wearDisplay {
+  font-weight: bold;
+  color: white;
+  margin-bottom: clamp(4px, 1vw, 8px);
+  font-size: clamp(11px, 2.5vw, 14px);
+}
+
+.tireVisual {
+  position: relative;
+  width: 100%;
+  min-width: 30px;
+  max-width: 120px;
+  aspect-ratio: 3/4;
+  background-color: #374151;
+  border-radius: clamp(4px, 1vw, 16px);
+  overflow: hidden;
+}
+
+.tireStripes {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgb(83, 83, 83) 33%,
+    rgb(55, 55, 55) 33%,
+    rgb(55, 55, 55) 66%,
+    rgb(83, 83, 83) 66%
+  );
+  background-size: 100% 100%;
+}
+
+.tireInfo {
+  margin-top: clamp(2px, 0.8vw, 4px);
+  color: #9ca3af;
+  text-align: center;
+  font-size: clamp(11px, 2vw, 14px);
+}
+
+.lapChart {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    color: #9ca3af;
+    margin-bottom: 1rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1f2937;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  th {
+    background: #374151;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  td {
+    padding: 0.5rem 0.75rem;
+    border-top: 1px solid #374151;
+  }
+
+  tr:last-child {
+    color: #9ca3af;
+  }
+}

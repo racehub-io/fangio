@@ -1,0 +1,36 @@
+@import "styles/layout.scss";
+
+.wrapper {
+    width: 100%;
+    height: calc(100vh - 4rem - 2rem - 1.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    justify-content: center;
+    color: white;
+}
+
+.workbookTabStyle {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+}
+
+.tab {
+    color: white;
+}
+
+.loadingWrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 20px;
+}

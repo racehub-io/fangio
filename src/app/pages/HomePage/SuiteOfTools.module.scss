@@ -1,0 +1,217 @@
+@import "styles/colors.scss";
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1000px;
+    margin: auto;
+
+    @media (max-width: 1000px) {
+        max-width: initial;
+        width: 100%;
+    }
+}
+
+
+
+@keyframes moveOutFarLeft {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-60px);
+    }
+}
+
+
+@keyframes moveOutCloseLeft {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-30px);
+    }
+}
+
+@keyframes moveOutCloseRight {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(30px);
+    }
+}
+
+@keyframes moveOutFarRight {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(60px);
+    }
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.card {
+    width: 30px;
+    height: 60px;
+}
+
+.ball1 {
+    animation: moveOutFarLeft 1s ease-out forwards;
+    background-color: red;
+    position: absolute;
+}
+
+.ball2 {
+    animation: moveOutCloseLeft 1s ease-out forwards;
+    background-color: blue;
+    z-index: 1;
+    position: absolute;
+}
+
+.ball3 {
+    background-color: yellow;
+    z-index: 2;
+    position: absolute;
+}
+
+.ball4 {
+    animation: moveOutCloseRight 1s ease-out forwards;
+    background-color: blue;
+    z-index: 1;
+    position: absolute;
+}
+
+.ball5 {
+    animation: moveOutFarRight 1s ease-out forwards;
+    background-color: red;
+    position: absolute;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+
+    span {
+        color: $color-actiongreen;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 36px;
+        flex-shrink: 0;
+        letter-spacing: -1px;
+    }
+
+    .description {
+        font-size: 16px;
+        padding: 0 40px 0 100px;
+
+
+        @media (max-width: 1000px) {
+            padding: 0;
+        }
+
+        align-self: center;
+    }
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 44px;
+    border-radius: 30px;
+    background-color: $color-deeperactiongreen;
+    height: 400px;
+    color: $color-jetblack;
+    gap: 100px;
+
+    @media (max-width: 1000px) {
+        gap: 0;
+        height: initial;
+        flex-direction: column;
+    }
+
+    .tools {
+        width: 450px;
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    .title {
+        font-size: 36px;
+        font-weight: 500;
+        padding-right: 10px;
+        line-height: 34px;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+
+    .name {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+
+        span {
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 55px;
+        }
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        font-size: 16px;
+
+    }
+
+    .text {
+        @media (max-width: 1000px) {
+            margin-top: 15px;
+        }
+    }
+}

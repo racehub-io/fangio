@@ -1,0 +1,60 @@
+@import "styles/layout.scss";
+@import "styles/colors.scss";
+
+.navbar {
+    padding: $padding;
+    color: $color-offwhite;
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100%;
+    flex-direction: row;
+    height: $navbar-height;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    .link {
+        display: flex;
+        outline: none;
+        flex-direction: row;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoText {
+        color: $color-white;
+        height: 18px;
+    }
+
+    .environmentLabel {
+        color: $color-white;
+        position: fixed;
+        bottom: 5px;
+        right: $padding;
+        z-index: 99999999;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .toolbar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .toolbar> :first-child [class*="Button_small"] {
+        border-radius: 14px 0 0 14px;
+        border-right: 1px solid black;
+    }
+
+    .toolbar> :nth-child(3) [class*="Button_small"] {
+        border-radius: 0 14px 14px 0;
+        border-left: 1px solid black;
+    }
+}

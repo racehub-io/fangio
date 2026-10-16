@@ -1,0 +1,50 @@
+@import "styles/layout.scss";
+@import "styles/unstyler.scss";
+@import "styles/colors.scss";
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    input {
+        outline: none;
+        background-color: $color-offwhite;
+        color: $color-jetblack;
+        padding: 8px 10px;
+        border-radius: 7px;
+    }
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forgotPassword {
+    display: flex;
+}
+
+.panelSwitcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.footer {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}

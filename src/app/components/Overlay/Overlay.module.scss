@@ -1,0 +1,43 @@
+@import "styles/colors.scss";
+@import "styles/layout.scss";
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 320px;
+    gap: 32px;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.form {
+    background-color: $color-darkgrey;
+    padding: 36px 44px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-width: 480px;
+    position: relative;
+}
+
+.large {
+    min-width: 700px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.caps {
+    text-transform: uppercase;
+    font-size: 18px;
+}

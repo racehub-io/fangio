@@ -1,0 +1,1 @@
+export { LapChartDisplayPanel } from './LapChartDisplayPanel';

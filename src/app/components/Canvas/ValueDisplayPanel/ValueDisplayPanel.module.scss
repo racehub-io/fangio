@@ -1,0 +1,102 @@
+@import "styles/colors.scss";
+
+.lineChartWrapper {
+    cursor: pointer;
+}
+
+.rowName {
+    fill: $color-white;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+.tooltipDataWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.tooltipDataColor {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.loadLapMessage {
+    cursor: default;
+    opacity: 0.75;
+    width: 250px;
+    height: 100px;
+    color: white;
+    display: flex;
+    font-family: "Kanit";
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 30px);
+    left: calc(50% - 125px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .icon {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 15px;
+    }
+}
+
+.brushLapMessage {
+    top: calc(50% - 50px);
+}
+
+.value {
+    height: 100%;
+    align-self: center;
+    display: flex;
+    justify-self: center;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+$teams: (
+    AstonMartin: #98FF98,
+    McLaren: #FFDAB9,
+    AlfaRomeo: #F08080,
+    Mercedes: #D3D3D3,
+    Ferrari: #FFA07A,
+    Williams: #87CEEB,
+    Alpine: #77B5FE,
+    AlphaTauri: #CCCCFF,
+    Haas: #FFC0CB,
+    RedBullRacingLavender: #E6E6FA,
+    RedBullRacingBlue: #ADD8E6,
+);
+
+// Generate classes for each team dynamically
+@each $team, $color in $teams {
+    .team#{$team} {
+        color: $color;
+    }
+}
+
+
+.noData {
+    position: absolute;
+    top: calc(50% - 21px / 2);
+}
+
+.componentName {
+    position: absolute;
+    bottom: 10px;
+    width: 100px;
+    font-size: 10px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    left: calc(50% - 50px);
+    text-align: center;
+  }

@@ -1,0 +1,1 @@
+export { TyreWearPitDisplayPanel } from './TyreWearPitDisplayPanel';

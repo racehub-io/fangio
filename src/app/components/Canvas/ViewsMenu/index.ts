@@ -1,0 +1,1 @@
+export { ViewsMenu } from './ViewsMenu';
